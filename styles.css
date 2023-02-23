@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tb {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+}
+
+.tb-phone {
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+  padding: 5px 7px;
+}
+
+.tb-phone:focus::placeholder {
+  color: transparent;
+}
+
+input:not([data-validation='valid']) ~ .icon-valid,
+input:not([data-validation='invalid']) ~ .icon-invalid {
+  display: none;
+}
+
+.tb-icon {
+  bottom: 4px;
+  position: absolute;
+  right: 5px;
+}
